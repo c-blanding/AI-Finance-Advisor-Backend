@@ -644,11 +644,11 @@ AuthResponse    { token, userId }
 
 ```java
 // Inbound (create)
-TransactionRequest  { amount, description, category, date }
+TransactionRequest  { amount, description, category, date; }
 
 // Outbound (read)
-TransactionResponse { id, amount, description, date, category, source }
-TransactionDTO      { id, amount, description, date, category, source }
+TransactionResponse { id, amount, description, date, category, source; }
+TransactionDTO      { id, amount, description, date, category, source; }
 
 // Inbound (edit)
 TransactionEditRequest { transactionId, amount, description, category, date }
